@@ -1,7 +1,7 @@
 {
   "name": "ab-iptv",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://arunabh28.github.io/ab-iptv/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
