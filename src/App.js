@@ -9,7 +9,7 @@ const App = () => {
   const [selectedChannel, setSelectedChannel] = useState(null);
 
   useEffect(() => {
-    fetch("/playlist.m3u") // Load M3U file
+    fetch(process.env.PUBLIC_URL + "/playlist.m3u") // Load M3U file
       .then((res) => res.text())
       .then(parseM3U);
   }, []);
