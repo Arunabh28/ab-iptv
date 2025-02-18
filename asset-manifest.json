@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ab-iptv/static/css/main.f855e6bc.css",
-    "main.js": "/ab-iptv/static/js/main.1008ed65.js",
+    "main.css": "/ab-iptv/static/css/main.14093ceb.css",
+    "main.js": "/ab-iptv/static/js/main.a8d6e5d5.js",
     "reactPlayerYouTube.js": "/ab-iptv/static/js/reactPlayerYouTube.4f217fbb.chunk.js",
     "reactPlayerSoundCloud.js": "/ab-iptv/static/js/reactPlayerSoundCloud.0512f7a0.chunk.js",
     "reactPlayerVimeo.js": "/ab-iptv/static/js/reactPlayerVimeo.653c73e8.chunk.js",
@@ -18,8 +18,8 @@
     "reactPlayerPreview.js": "/ab-iptv/static/js/reactPlayerPreview.13b61193.chunk.js",
     "static/js/453.afe14fb7.chunk.js": "/ab-iptv/static/js/453.afe14fb7.chunk.js",
     "index.html": "/ab-iptv/index.html",
-    "main.f855e6bc.css.map": "/ab-iptv/static/css/main.f855e6bc.css.map",
-    "main.1008ed65.js.map": "/ab-iptv/static/js/main.1008ed65.js.map",
+    "main.14093ceb.css.map": "/ab-iptv/static/css/main.14093ceb.css.map",
+    "main.a8d6e5d5.js.map": "/ab-iptv/static/js/main.a8d6e5d5.js.map",
     "reactPlayerYouTube.4f217fbb.chunk.js.map": "/ab-iptv/static/js/reactPlayerYouTube.4f217fbb.chunk.js.map",
     "reactPlayerSoundCloud.0512f7a0.chunk.js.map": "/ab-iptv/static/js/reactPlayerSoundCloud.0512f7a0.chunk.js.map",
     "reactPlayerVimeo.653c73e8.chunk.js.map": "/ab-iptv/static/js/reactPlayerVimeo.653c73e8.chunk.js.map",
@@ -37,7 +37,7 @@
     "453.afe14fb7.chunk.js.map": "/ab-iptv/static/js/453.afe14fb7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.1008ed65.js"
+    "static/css/main.14093ceb.css",
+    "static/js/main.a8d6e5d5.js"
   ]
 }

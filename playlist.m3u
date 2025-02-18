@@ -13,3 +13,5 @@ https://rtmp.smartstream.video/nktvlive/nktvlive/playlist.m3u8
 https://livelegitpro.in/hls2/newstime/index.m3u8
 #EXTINF:-1 tvg-id="PratidinTime.in" tvg-logo="https://i.imgur.com/2kzS7y0.png" group-title="Assamese",Pratidin Time (720p) [Not 24/7]
 https://5b48d7e1b4bce.streamlock.net/pratidintime/pratidintime/playlist.m3u8
+#EXTINF:-1 group-title="Assamese",Assam Talks
+http://mhms9.airtel.tv/wh7f454c46tw4163224253_611767333/PLTV/88888888/224/3221226339/index.m3u8
