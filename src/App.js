@@ -7,6 +7,12 @@ const App = () => {
   const [channels, setChannels] = useState({});
   const [selectedGroup, setSelectedGroup] = useState(null);
   const [selectedChannel, setSelectedChannel] = useState(null);
+  const [videoError, setVideoError] = useState(false);
+
+  const handleChannelClick = (channel) => {
+    setSelectedChannel(channel);
+    setVideoError(false); // Reset video error on channel selection
+  };
 
   useEffect(() => {
     fetch(process.env.PUBLIC_URL + "/playlist.m3u") // Load M3U file
@@ -38,7 +44,7 @@ const App = () => {
       {!selectedGroup ? (
         <div className="group-container">
           {groups.map((group) => (
-            <button key={group} onClick={() => setSelectedGroup(group)} className="group-button">
+            <button key={group} onClick={() => setSelectedGroup(group)} className="group-button tile-button">
               {group}
             </button>
           ))}
@@ -48,7 +54,7 @@ const App = () => {
           <button onClick={() => setSelectedGroup(null)} className="back-button">Back</button>
           <div className="channel-container">
             {channels[selectedGroup].map((channel) => (
-              <button key={channel.name} onClick={() => setSelectedChannel(channel)} className="channel-button">
+              <button key={channel.name} onClick={() => handleChannelClick(channel)} className="channel-button">
                 {channel.name}
               </button>
             ))}
@@ -58,7 +64,18 @@ const App = () => {
       {selectedChannel && (
         <div className="player-overlay">
           <button onClick={() => setSelectedChannel(null)} className="close-button">Close</button>
-          <ReactPlayer url={selectedChannel.url} controls width="100%" height="100%" playing />
+          {videoError ? (
+            <p className="error-message">Error: Unable to load video. Please try another channel.</p>
+          ) : (
+            <ReactPlayer 
+              url={selectedChannel.url} 
+              controls 
+              width="100%" 
+              height="100%" 
+              playing 
+              onError={() => setVideoError(true)}
+            />
+          )}
         </div>
       )}
     </div>
